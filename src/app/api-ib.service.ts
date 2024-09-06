@@ -36,7 +36,7 @@ export class ApiIBService {
     const params = new HttpParams()
       .set('term', searchTerm)
       // .set('language', language);
-    return this.http.get(`${this.apiFalse}searchPubMed`, { params });
+    return this.http.get(`${this.apiUrl}searchPubMed`, { params });
   }
 }
 function type(spanishDescription: boolean): any {
